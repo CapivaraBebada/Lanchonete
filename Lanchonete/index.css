@@ -1,0 +1,397 @@
+body {
+    background-image: url('/Lanchonete/imagens/amarelo.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+/* link do insta e imagem-logo */
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 16px;
+}
+
+/* Centraliza imagem-nome */
+.imagem-nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Criar ink do insta */
+a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Imagem do nome */
+header img {
+    position: relative;
+    top: -190px;
+    text-align: center;
+}
+/* Moldura do título */
+.moldura-apresentacao {
+    border: 5px solid black;
+    padding: 1px;
+    height: 200px;
+    margin-top: 5px;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: #fbf905;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(217, 55, 55); /* horizontal - vertical - densidade */;
+}
+/* link do insta */
+.moldura-apresentacao ul li a {
+    display: flex;
+    align-items: center;            /* Alinha verticalmente a imagem e o texto */
+    text-decoration: none;          /* Remove o sublinhado */
+    color: inherit;                 /* Mantém a cor do texto */
+    margin-top: 40px;
+    padding-left: 20%;
+}
+/* logo do insta */
+.moldura-apresentacao ul li a img {
+    margin-right: 10px; /* Adiciona espaço entre a imagem e o texto */
+    border-radius: 10px;
+}
+/* caixa */
+.moldura-apresentacao-caixa img {
+    width: 120px;
+    padding-right: 50px;
+}
+
+
+/* Barra de informações */
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+/* Moldura das informcações */
+.moldura-infomacoes {
+    border: 2px solid black;
+    height: 80px;
+    margin-top: -125px;
+    background-color: rgb(173, 184, 21);
+    border-radius: 20px;
+    padding-inline-end: 3%;
+    padding-inline-start: 3%;
+}
+
+ /* Cor do insta na barra de informações */
+.informacoes a {
+    color: inherit;
+    margin-right: 10px;
+}
+
+
+/* SUMÁRIO */
+.moldura-sumario {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 170, 27);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-left: 18%;
+    margin-right: 18%;
+    height: 80px;
+    top: 0;
+    z-index: 1000;                      /* Só sei que interfera nas letras */
+    position: sticky;                   /* Faz ele ficar estático */
+}       
+
+.botao-sumario {
+    background-color: rgb(174, 193, 34);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 200%; 
+    height: 80%; 
+    font-size: 30px;
+    margin: 8px 0px;                  /* distancia em altua - distancia em largura */
+    border-radius: 5px; 
+    cursor: pointer;                    /* Mostra o ícone de clique */
+}
+
+
+/*                  PARA TODOS AS SECTIONS                  */
+
+/* Moldura geral para a seção de produtos mais vendidos */
+.moldura-produtos {
+    padding-right: 13px;
+    background: linear-gradient(145deg, #ed2020, #d2e411); /* Gradiente para profundidade */
+    display: block;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 18px 10%;
+    height: auto;                               /* A moldura se adpta com o tamnho da imagem */
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+/* Produtos novos nao sobreporão as sections abaixo deles */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Classe principal para todos os produtos, contendo imagem e legenda */
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                    /*Permite que os produtos quebrem para novas linhas se necessário */
+    gap: 20px;                          /* Espaçamento entre os produtos */
+    padding: 40px;                      /* Topo da imagem */
+}
+
+/* Define as configuraçoes dos produtos */
+.produto {
+    display: flex;
+    flex-direction: column;         /* Legenda embaixo da imagem */
+    align-items: center;            
+    text-align: center;             
+    border: 1px solid #000000;       
+    border-radius: 8px;             
+    padding: 2px;                   
+    background-color: #fff;       
+    width: 300px;                   
+    margin: 5px;                    /* Espaço entre os produtos */
+}
+
+/* Estilo da imagem do produto */
+.produto img {
+    max-width: 100%;            /* A imagem ocupa 100% da largura do container, mas respeita a proporção */
+    height: 80%;                /* Mantém a proporção da imagem */
+    border-radius: 10px;        
+}
+
+/* Estilo da legenda (nome do produto) */
+.produto h2 {
+    margin-top: 0%;                 /* Espaçamento entre a imagem e o texto */
+    font-size: 40px;                
+    color: #333;                  
+}
+
+.produto h3 {
+    margin-top: 0px;                  /* Espaçamento entre a imagem e o texto */
+    font-size: 20px;                  
+    color: #6e5454;                 
+}
+
+
+/*              MAIS VENDIDOS           */
+.moldura-apresentacao-vendidos {
+    background-color: rgb(159, 159, 46);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 10px 0.5%;
+    height: auto;
+    width: 94.5%;
+}
+
+/* Imagem que apresenta a seção */
+.imagem-vendidos {
+    position: relative;
+    display: inline-block;
+}
+.imagem-vendidos img {
+    display:flex;
+    width: 50%;
+    height: auto;
+    padding-left: 51%;
+}
+
+/* Sobreposição das letras na imagem */
+.sobreposto-vendidos {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -80%);           /* lado - altura */
+    color: rgb(0, 0, 0); 
+    font-size: 85px;
+    text-align: left;
+    z-index: 1;                             /* Garante que o texto esteja acima da imagem */
+}
+
+.letra-apresentacao-vendido {
+    font-size: 50px;
+    padding: 30px;
+
+}
+
+
+/*                HAMBURGUER                 */
+.moldura-apresentacao-hamburguer { 
+    background-color: rgb(159, 159, 46);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 30px 0.5%;
+    height: auto;
+    width: 94.5%;
+    flex-wrap: wrap;
+}
+
+/* Imagem que apresenta a seção */
+.imagem-hamburguer {
+    position: relative;
+    display: inline-block;
+}
+.imagem-hamburguer img {
+    display:flex;
+    width: 65%;
+    height: auto;
+    padding-left: 35%;
+}
+
+.sobreposto-hamburguer {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -80%);           /* lado - altura */
+    color: rgb(0, 0, 0); 
+    font-size: 85px;
+    text-align: left;
+    z-index: 1;                             /* Garante que o texto esteja acima da imagem */
+}
+
+.letra-apresentacao-hamburguer {
+    font-size: 50px;
+    padding: 30px;
+}
+
+
+/*                 CREPES                   */
+.moldura-apresentacao-crepes {
+    background-color: rgb(159, 159, 46);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 30px 0.5%;
+    height: auto;
+    width: 94.5%;
+    flex-wrap: wrap;
+}
+
+/* Imagem que apresenta a seção */
+.imagem-crepes {
+    position: relative;
+    display: inline-block;
+}
+.imagem-crepes img {
+    display:flex;
+    width: 65%;
+    height: auto;
+    padding-left: 35%;
+}
+
+.sobreposto-crepes {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -80%);           /* lado - altura */
+    color: rgb(0, 0, 0); 
+    font-size: 85px;
+    text-align: left;
+    z-index: 1;                             /* Garante que o texto esteja acima da imagem */
+}
+
+.letra-apresentacao-crepes {
+    font-size: 50px;
+    padding: 30px;
+}
+
+
+/*                 Bebidas                  */
+.moldura-apresentacao-bebidas {
+    background-color: rgb(159, 159, 46);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 30px 0.5%;
+    height: auto;
+    width: 94.5%;
+    flex-wrap: wrap;
+}
+
+/* Imagem que apresenta a seção */
+.imagem-bebidas {
+    position: relative;
+    display: inline-block;
+}
+.imagem-bebidas img {
+    display:flex;
+    width: 65%;
+    height: auto;
+    padding-left: 35%;
+}
+
+.sobreposto-bebidas {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -80%);           /* lado - altura */
+    color: rgb(0, 0, 0); 
+    font-size: 85px;
+    text-align: left;
+    z-index: 1;                             /* Garante que o texto esteja acima da imagem */
+}
+
+.letra-apresentacao-bebidas {
+    font-size: 50px;
+    padding: 30px;
+}
+
+
+/*              Sobremesas                          */
+.moldura-apresentacao-sobremesas {
+    background-color: rgb(159, 159, 46);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 30px 0.5%;
+    height: auto;
+    width: 94.5%;
+    flex-wrap: wrap;
+}
+
+/* Imagem que apresenta a seção */
+.imagem-sobremesas {
+    position: relative;
+    display: inline-block;
+}
+.imagem-sobremesas img {
+    display:flex;
+    width: 65%;
+    height: auto;
+    padding-left: 35%;
+}
+
+.sobreposto-sobremesas {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -80%);           /* lado - altura */
+    color: rgb(0, 0, 0); 
+    font-size: 85px;
+    text-align: left;
+    z-index: 1;                             /* Garante que o texto esteja acima da imagem */
+}
+
+.letra-apresentacao-sobremesas {
+    font-size: 50px;
+    padding: 30px;
+}

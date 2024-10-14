@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokinho</title>
+
+    <!-- CSS de molduras e entre outros -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="moldura-apresentacao" >
+        <nav>              
+            <ul>               
+                <li>
+                    <a
+                    href="https://www.instagram.com/stokinholanches/" target="_blank" rel="noopener noreferrer" title="instagram-stokinho">
+                        <img src="./imagens/insta.png" alt="instagram" width="50px" title="instagram-stokinho">
+                    Instagram
+                    </a>
+                </li>
+                <div class="moldura-apresentacao-caixa">
+                    <li>
+                        <img src="./imagens/caixa.png" width="100px">
+                    </li>
+                </div>    
+            </ul>
+        </nav>
+    </div>
+        <!-- Parte da imagem 'Stokinho' e apresentação -->
+        <header class="imagem-nome">
+            <img src="./imagens/nome.png" width="300px">
+        </header>
+
+    <!-- LOCAL - HORARIO E INSTA -->
+    <div class="informacoes moldura-infomacoes">
+        <p> | Local: UnB - ICC Norte |</p>
+        <p> | Seg à Sex - 7h às 19h| </p>
+        <p>
+            <a href="https://www.instagram.com/stokinholanches/" target="_blank" rel="noopener noreferrer" title="instagram-stokinho">
+                | @Stokinho |
+            </a>
+        </p>
+    </div>
+    
+    <!-- Botões do sumário -->
+    <div class="moldura-sumario">
+        <button class="botao-sumario" onclick="document.getElementById('vendidos').scrollIntoView({behavior: 'smooth'})"> Mais vendidos </button>
+        <button class="botao-sumario" onclick="document.getElementById('hamburguer').scrollIntoView({ behavior: 'smooth' })"> Hambúrgueres </button>
+        <button class="botao-sumario" onclick="document.getElementById('crepes').scrollIntoView({ behavior: 'smooth' })"> Crepes </button>
+        <button class="botao-sumario" onclick="document.getElementById('bebidas').scrollIntoView({ behavior: 'smooth' })"> Bebidas </button>
+        <button class="botao-sumario" onclick="document.getElementById('sobremesas').scrollIntoView({ behavior: 'smooth' })"> Sobremesas </button>
+    </div>
+
+
+<!-- Conteúdo de cada seção -->
+<div class="moldura-produtos">
+
+    <!--                MAIS VENDIDOS               -->
+    <section id="vendidos" class="letra-apresentacao-vendido moldura-apresentacao-vendidos">
+        <!-- Imagem de apresentacao -->
+        <div class="imagem-vendidos">
+            <img src="imagemhamburguer/hamburguer1.png" width="1100" height="400">
+            <h1 class="sobreposto-vendidos">Produtos<br>mais vendidos</h1>
+        </div>
+            
+        <!-- Imagem de produtos -->
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="imagemvendido/dog.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+
+            <div class="produto">
+                <img src="imagemhamburguer/hamburguer1.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- HAMBURGUERES -->
+    <section id="hamburguer" class="letra-apresentacao-hamburguer moldura-apresentacao-hamburguer">
+        <!-- Imagem de apresentação -->
+        <div class="imagem-hamburguer">
+            <img src="imagemhamburguer/venda-hamburguer.png" alt="Hamburgueres">
+            <h1 class="sobreposto-hamburguer"> Hambúrgueres </h1>
+        </div>
+        
+        <div class="produtos-container">
+            <!-- Imagem dos prdutos -->
+            <div class="produto">
+                <img src="imagemhamburguer/hamburguer1.png" alt="hamburguer">
+                <h2> imagem 1 </h2>
+                <h3> feito com bla bla bla </h3>
+            </div>
+
+            <div class="produto">
+                <img src="imagemhamburguer/hamburguer1.png" alt="hamburguer">
+                <h2> imagem 1 </h2>
+                <h3> feito com bla bla bla </h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CREPES -->
+    <section id="crepes" class="letra-apresentacao-crepes moldura-apresentacao-crepes">
+    <!-- Imagem de apresentação -->
+    <div class="imagem-crepes">
+        <img src="imagemhamburguer/venda-hamburguer.png" alt="...">
+        <h1 class="sobreposto-crepes"> Crepes </h1>
+    </div>
+
+        <!-- Imagens de produtos -->
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="imagemhamburguer/hamburguer1.png" alt="hamburguer">
+                <h2> imagem 1 </h2>
+                <h3> feito com bla bla bla </h3>
+            </div>
+        
+            <div class="produto">
+                <img src="imagemvendido/dog.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- Bebidas -->
+    <section id="bebidas" class="letra-apresentacao-bebidas moldura-apresentacao-bebidas">
+    <!-- Imagem de apresentação -->
+    <div class="imagem-bebidas">
+        <img src="imagembebidas/venda-bebidas.jpg" alt="...">
+        <h1 class="sobreposto-bebidas"> Bebidas </h1>
+    </div>
+        
+    <!-- Imagens de produtos -->
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="imagemvendido/dog.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+
+            <div class="produto">
+                <img src="imagemvendido/dog.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobremesas -->
+    <section id="sobremesas" class="letra-apresentacao-sobremesas moldura-apresentacao-sobremesas">
+    <!-- Imagem de apresentação -->
+    <div class="imagem-sobremesas">
+        <img src="imagemhamburguer/venda-hamburguer.png" alt="...">
+        <h1 class="sobreposto-sobremesas"> Sobremesas </h1>
+    </div>
+        
+
+        <!-- Imagens de produtos-->
+        <div class="produtos-container">
+
+            <div class="produto">
+                <img src="imagemvendido/dog.png" alt="Cachorro na panela">
+                <h2>PRODUTO 1</h2>
+                <h3> cachorro à milanesa feito com molho de gato molhado </h3>
+            </div>
+
+        </div>
+    </section>     
+</div>
+</body>
+</html>
+
